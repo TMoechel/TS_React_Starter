@@ -27,6 +27,7 @@ class App extends React.Component<{}, IState> {
     };
   }
 
+  // componentDidMount is invoked when a component has been inserted into the DOM
   public componentDidMount() {
     console.log(React.version);
     this.timer = window.setInterval(() => this.handleTimerTick(),
